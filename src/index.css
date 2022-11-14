@@ -5,12 +5,61 @@ body {
 	margin: 0;
 }
 
+::-webkit-scrollbar {
+	display: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
 :root {
+	--blue: #5457b6;
+	--red: #ed6468;
+	--pale-blue: #c3d1ef;
+	--pale-red: #ffb8bb;
+
+	--dark-gray: #324152;
+	--gray: #67727e;
+	--light-gray: #eaecf1;
+	--off-white: #f5f6fa;
+	--white: #fff;
+
+	--border-radius: 10px;
+	--box-shadow: 0px 64px 26px rgba(123, 153, 188, 0.01), 0px 36px 22px rgba(123, 153, 188, 0.03), 0px 16px 16px rgba(123, 153, 188, 0.04), 0px 4px 9px rgba(123, 153, 188, 0.05),
+		0px 0px 0px rgba(123, 153, 188, 0.05);
+
+	--fw-regular: 400;
+	--fw-medium: 500;
+	--fw-bold: 700;
+
 	font-family: "Rubik", sans-serif;
 	font-size: 16px;
+	font-weight: var(--fw-regular);
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
+	color: var(--dark-gray);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-text-size-adjust: 100%;
+}
+
+textarea {
+	height: 96px;
+	width: 100%;
+	resize: none;
+	border-color: var(--light-gray);
+	border-radius: var(--border-radius);
+	padding: 15px;
+	font-size: 16px;
+	font-family: "Rubik", sans-serif;
+	outline: none;
+	margin-bottom: 15px;
+	grid-area: text-area;
+}
+
+textarea:focus {
+	border-color: var(--dark-gray);
 }

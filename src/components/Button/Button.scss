@@ -1,0 +1,29 @@
+.button {
+	display: inline-flex;
+	height: 50px;
+	text-transform: uppercase;
+	background-color: var(--blue);
+	color: var(--white);
+	border-radius: var(--border-radius);
+	align-items: center;
+	padding: 0 30px;
+	min-width: 100px;
+	justify-content: center;
+	font-weight: var(--fw-medium);
+	cursor: pointer;
+	&--secondary {
+		padding: 0;
+		min-width: unset;
+		text-transform: capitalize;
+		background-color: unset;
+		color: var(--blue);
+		border-radius: unset;
+		font-weight: var(--fw-regular);
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	&.danger {
+		background-color: var(--red) !important;
+	}
+}

@@ -1,0 +1,13 @@
+.option {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	cursor: pointer;
+	span {
+		color: var(--blue);
+		font-weight: var(--fw-medium);
+	}
+	&.danger span {
+		color: var(--red);
+	}
+}

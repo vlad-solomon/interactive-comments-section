@@ -1,0 +1,29 @@
+.modal {
+	outline: none;
+	background-color: var(--white);
+	border-radius: var(--border-radius);
+	box-shadow: var(--box-shadow);
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	max-width: 400px;
+	&__title {
+		font-size: 20px;
+		font-weight: var(--fw-medium);
+	}
+	&__text {
+		line-height: 150%;
+		color: var(--gray);
+		padding-right: 5px;
+	}
+	&__buttons {
+		display: flex;
+		gap: 15px;
+		.button {
+			flex-grow: 1;
+			padding: 0;
+			background-color: var(--gray);
+		}
+	}
+}

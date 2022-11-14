@@ -1,0 +1,57 @@
+@media (min-width: 800px) {
+	.input {
+		display: flex;
+		align-items: flex-start;
+		padding: 24px;
+		&__user {
+			height: 40px;
+			width: 40px;
+		}
+		&__text-area {
+			margin: 0;
+		}
+		&__buttons {
+			flex-direction: column-reverse;
+			gap: 0;
+		}
+	}
+	.comments {
+		gap: 18px;
+	}
+	.comment {
+		gap: 18px;
+		&__container {
+			display: grid;
+			grid-template-columns: 40px 1fr;
+			grid-template-areas: "footer header" "footer text";
+			gap: 18px 24px;
+			padding: 24px;
+		}
+		&__header {
+			grid-area: header;
+		}
+		&__text {
+			grid-area: text;
+		}
+		&__footer {
+			grid-area: footer;
+		}
+		&__votes {
+			flex-direction: column;
+		}
+		&__options {
+			top: 30px;
+			right: 24px;
+			bottom: unset;
+		}
+		&__replies {
+			padding-left: 90px;
+			&::before {
+				left: 42px;
+			}
+		}
+		&__edit {
+			align-items: flex-end;
+		}
+	}
+}

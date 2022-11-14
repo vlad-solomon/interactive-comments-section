@@ -1,0 +1,38 @@
+[
+	{
+		"id": "la83jcyp",
+		"user": "amyrobson",
+		"text": "Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You’ve nailed the design and the responsiveness at various breakpoints works really well.",
+		"posted": "1 month ago",
+		"votes": 12,
+		"replies": []
+	},
+	{
+		"id": "la83jupy",
+		"user": "maxblagun",
+		"text": "Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive intro React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!",
+		"posted": "2 weeks ago",
+		"votes": 5,
+		"replies": [
+			{
+				"id": "la83k3hw",
+				"parentId": "la83jupy",
+				"replyTo": "maxblagun",
+				"user": "ramsesmiron",
+				"text": "If you're still new, I'd recommend focusing on the fundamentls of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.",
+				"posted": "1 week ago",
+				"votes": 4
+			},
+			{
+				"id": "la83k3t0",
+				"parentId": "la83jupy",
+				"replyTo": "ramsesmiron",
+				"isUser": true,
+				"user": "juliusomo",
+				"text": "I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.",
+				"posted": "2 days ago",
+				"votes": 2
+			}
+		]
+	}
+]

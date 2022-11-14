@@ -1,0 +1,25 @@
+@use "../Comment/Comment.scss";
+
+.input {
+	display: grid;
+	align-items: center;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: "text-area text-area" "pfp buttons";
+	gap: 15px;
+	background-color: var(--white);
+	border-radius: var(--border-radius);
+	box-shadow: var(--box-shadow);
+	padding: 15px;
+	max-width: 730px;
+	&__user {
+		@extend .comment__pfp;
+		flex-shrink: 0;
+		grid-area: pfp;
+	}
+	&__buttons {
+		display: flex;
+		justify-content: flex-end;
+		gap: 10px;
+		grid-area: buttons;
+	}
+}
